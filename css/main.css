@@ -1,0 +1,171 @@
+:root,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#non {
+    display: none;
+}
+
+#button {
+    text-align: center;
+}
+
+#button>button {
+    width: 7%;
+    padding-top: 4px;
+}
+
+.main {
+    box-shadow: 18px 10px 5px 1px black;
+    background-image: url(../资源/贪吃蛇背景图.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: darkgrey;
+    width: 60%;
+    height: 80%;
+    min-width: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 20px solid;
+    border-color: #fff8f8bf;
+}
+
+#food {
+    background-image: url(../资源/苹果.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    /* background-color: green; */
+    border-radius: 50%;
+}
+
+#bugs {
+    width: auto;
+    top: 100px;
+    left: 200px;
+    position: relative;
+    font-size: 0px;
+}
+
+#first {
+    background-image: url(../资源/蛇.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    position: absolute;
+}
+
+#bugs>div {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    font-size: 10px;
+    background-color: rgb(206, 229, 48);
+}
+
+#last,
+#bugs>div:not([id="first"]) {
+    border-radius: 40%;
+}
+
+#last {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    background-color: thistle;
+}
+
+#numb {
+    color: red;
+    margin: auto;
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    bottom: 0;
+    right: 0;
+}
+
+#stopout {
+    display: none;
+    background-image: url(../资源/暂停.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: darkgrey;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+#one {
+    border-radius: 5%;
+    background-image: url(../资源/背景.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: darkgrey;
+    width: 50%;
+    height: 80%;
+    min-width: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#one>div {
+    transition: all, .5s;
+    box-shadow: 10px 8px 7px 1px black, 5px -1px 9px 5px black inset;
+    border-radius: 5%;
+    background-color: cadetblue;
+    opacity: 0.5;
+    font-size: 2rem;
+    text-align: center;
+    width: 40%;
+    height: 15%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: -35%;
+    bottom: 0;
+    right: 0;
+}
+
+#one>div:hover {
+    cursor: pointer;
+    width: 45%;
+    height: 20%;
+    font-size: 2.5rem;
+}
+
+#two {
+    color: red;
+    display: none;
+    font-size: 3rem;
+    color: cornsilk;
+    text-align: center;
+    width: 40%;
+    height: 15%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
